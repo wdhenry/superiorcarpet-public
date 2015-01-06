@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Superior Carpet and Upholstery Care - Contact Us</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link href = "../media/css/bootstrap.min.css" rel = "stylesheet">
+        <link href = "../media/css/styles.css" rel = "stylesheet">
+	</head>
+    <body>
+		<div id="mainHeader" class="container">	
+        </div>
+		
+		<div class="container">         
+			<h3>Have a question?</h3>
+			<h4>Please fill out this form at your convenience and we will get back to you as soon as possible.</h4>
+                
+            <fieldset id="contact_form" class="form-horizontal">
+                <div id="result"></div>		
+                <div class="form-group">
+                    <label for="quotename" class="col-sm-2 control-label">Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control"  name="name" id="name" placeholder="Enter Your Name" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="quotephone" class="col-sm-2 control-label">Phone:</label>
+                    <div class="col-sm-10">
+						<input type="text" class="form-control" name="phone" id="phone"  placeholder="515-265-3478"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="quoteemail" class="col-sm-2 control-label">Email:</label>
+                    <div class="col-sm-10">
+						<input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="quotemsg" class="col-sm-2 control-label">Message:</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" name="message" id="message" placeholder="Enter a message"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-10 col-sm-2">
+    					<button class="btn btn-primary" id="submit_btn">Submit</button>
+                    </div>
+                </div> 
+            </fieldset>
+        </div>
+        
+        <div id="mainFooter" class="navbar navbar-default navbar-static-bottom">
+        </div>
+        
+        <script type="text/javascript" src = "../media/js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src = "../media/js/bootstrap.js"></script>
+		<script type="text/javascript" src = "../media/js/contactus_form_validation.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#mainHeader').load('_inc_header.htm', function() {
+					$('#mainNavContactUs').addClass('active')});
+				$('#mainFooter').load('_inc_footer.htm');				
+			});
+
+		</script>
+    
+    </body>
+</html>
